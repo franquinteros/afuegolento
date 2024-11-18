@@ -1,0 +1,84 @@
+/* Estilos generales para el contenedor de contacto */
+.container {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 100px auto; /* Centrar el contenedor horizontalmente y margen superior */
+  padding: 40px 20px; /* Espaciado interno */
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo ligeramente transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-direction: column; /* Asegura que el contenido esté en columna */
+}
+
+/* Efecto al pasar el cursor sobre el contenedor */
+.container:hover {
+  transform: translateY(-5px); /* Mover hacia arriba */
+  background-color: rgba(255, 255, 255, 0.85); /* Aumentar la transparencia */
+}
+
+/* Título principal */
+h2 {
+  font-size: 2rem; /* Tamaño de fuente para el título */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para las secciones de información de contacto y formulario */
+.row {
+  display: flex; /* Usar flexbox para la disposición */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+  gap: 30px; /* Espaciado entre columnas */
+  justify-content: center; /* Centrar las columnas */
+}
+
+/* Estilo de cada columna */
+.col-md-6 {
+  background-color: rgba(240, 240, 240, 0.9); /* Fondo de sección */
+  border: 1px solid #ccc; /* Borde ligero */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  flex: 1 1 45%; /* Hacer que las columnas se ajusten al 45% del ancho */
+  box-sizing: border-box; /* Asegurar que el padding no afecte al ancho total */
+  max-width: 400px; /* Limitar el tamaño máximo de las columnas */
+}
+
+/* Títulos de las secciones */
+h5 {
+  font-size: 1.5rem; /* Tamaño de fuente para subtítulos */
+  color: #333; /* Color del texto */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilo de la lista de información de contacto */
+.list-unstyled {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+}
+
+/* Estilo de cada elemento de la lista */
+.list-unstyled li {
+  margin-bottom: 10px; /* Espaciado inferior entre elementos */
+  color: #555; /* Color del texto */
+}
+
+/* Estilos para el formulario */
+.form-group {
+  margin-bottom: 20px; /* Espaciado inferior entre campos */
+}
+
+/* Estilo del botón de enviar */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo del botón */
+  border-color: #007bff; /* Color del borde del botón */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.btn-primary:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+  transform: translateY(-2px); /* Mover hacia arriba */
+}

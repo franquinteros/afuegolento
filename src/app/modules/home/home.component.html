@@ -1,0 +1,33 @@
+<app-header></app-header>
+<!-- Contenedor principal del Home -->
+<section class="home">
+    <div class="content">
+        <img class="logo" src="/logo.png">
+        <h1 class="title">A Fuego Lento, cocineros por excelencia</h1>
+        <button (click)="scrollToSection()">Explorar Más</button>
+    </div>
+</section>
+
+<!-- Sección de destino para el scroll -->
+<section #sectionDestino class="section-destino">
+    <h2 class="subtitle">Recetas Destacadas
+    </h2>
+    <app-carousel></app-carousel>
+</section>
+
+<section #sectionRecetas>
+    <h2 class="subtitle">Recetas Disponibles
+    </h2>
+    <app-recetas></app-recetas>
+</section>
+
+<section #sectionMultimedia>
+    <h2 class="subtitle">Cocina junto a los mejores 
+    </h2>
+    <app-multimedia></app-multimedia>
+</section>
+
+<app-footer></app-footer>
+
+
+

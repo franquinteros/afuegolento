@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+    background-image: url('../public/Mantel.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+  }
+
+  html, body {
+    overflow: auto;
+  }
+  
+
+  

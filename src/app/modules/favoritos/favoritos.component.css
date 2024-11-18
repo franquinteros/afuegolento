@@ -1,0 +1,69 @@
+/* Estilos generales de la sección de favoritos */
+.favorites {
+    padding: 50px 20px;
+    margin-top: 50px;
+    background-image: url('/imglogin.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo al hacer scroll */
+    color: white; /* Cambia el color del texto para que sea visible sobre el fondo */
+    text-align: center;
+}
+
+/* Encabezado de la sección */
+.favorites h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fefefe; /* Color de texto claro para que resalte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+
+/* Estilo de la lista de favoritos */
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Estilo de cada elemento favorito */
+.favorite-item {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para resaltar los items */
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir transición para la sombra */
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.favorite-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Estilo de la imagen del favorito */
+.favorite-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Título del favorito */
+.favorite-item h3 {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.favorite-item:hover h3 {
+    color: #007bff; /* Cambiar color del título al hacer hover */
+}
+
+

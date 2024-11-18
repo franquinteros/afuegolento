@@ -1,0 +1,27 @@
+<div class="recipe-tracker" [ngClass]="animationClass" [hidden]="recetaId === null">
+  <h2 class="text-center">Seguimiento de Receta {{ (recetaId !== null ? recetaId + 1 : 0) }}</h2>
+  <div class="recipe-content">
+    <!-- Sección de Ingredientes -->
+    <div class="ingredients" [ngClass]="animationClass">
+      <h3>Ingredientes</h3>
+      <ul class="ingredients-list">
+        <li *ngFor="let ingrediente of ingredientes">
+          <input type="checkbox" id="{{ingrediente}}">
+          <label for="{{ingrediente}}">{{ingrediente}}</label>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sección de Procedimiento -->
+    <div class="procedure" [ngClass]="animationClass">
+      <h3>Procedimiento</h3>
+      <ol class="procedure-steps">
+        <li *ngFor="let paso of procedimiento">{{paso}}</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+
+  

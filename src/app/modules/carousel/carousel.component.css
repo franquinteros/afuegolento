@@ -1,0 +1,43 @@
+/* Contenedor principal del carrusel */
+.carousel {
+    border-radius: 15px; /* Bordes redondeados para todo el carrusel */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto flotante */
+}
+
+/* Contenedor individual de imágenes */
+.carousel-image-container {
+    position: relative; /* Necesario para posicionar el caption */
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Asegura que las imágenes cubran todo el contenedor */
+    filter: brightness(0.8); /* Oscurece un poco la imagen para resaltar el texto */
+    border-radius: 15px; /* Aplica bordes redondeados directamente a las imágenes */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Añadido: transición suave en ambas propiedades */
+}
+
+/* Caption del carrusel */
+.carousel-caption {
+    position: absolute; /* Posiciona el caption en la parte inferior */
+    bottom: 20px; /* Espaciado desde el fondo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige el centro */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente para mejorar la legibilidad */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 90%; /* Limita el ancho del caption */
+    text-align: center; /* Centra el texto dentro del caption */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar el caption */
+}
+
+/* Hover en las imágenes */
+.carousel-item img:hover {
+    transform: scale(1.05); /* Leve zoom al pasar el cursor */
+    filter: brightness(1); /* Opcional: elimina el brillo oscuro al hacer hover */
+}
+

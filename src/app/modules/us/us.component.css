@@ -1,0 +1,121 @@
+/* Estilos generales para la página "Quiénes Somos" */
+.container {
+  max-width: 900px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background-color: #fdf2e9; /* Fondo cálido */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 1;
+}
+
+/* Efecto al pasar el cursor sobre el contenedor */
+.container:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 247, 240, 0.95); /* Fondo más claro */
+}
+
+/* Estilo para las imágenes de "Nuestro Equipo" */
+.equipo-imagen {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 150px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin distorsionar su proporción */
+  border-radius: 10px; /* Mantiene las esquinas redondeadas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para estilo */
+  transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto hover en imágenes */
+.equipo-imagen:hover {
+  transform: scale(1.05); /* Aumenta levemente el tamaño al pasar el mouse */
+}
+
+/* Estilo para las reseñas */
+.resena {
+  background-color: #fef9f4; /* Fondo claro */
+  border: 1px solid #AB0000 ; /* Borde cálido */
+  border-radius: 10px;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+
+/* Hover para el efecto de zoom */
+.resena:hover {
+  transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+
+/* Título principal */
+h2 {
+  font-size: 2.5rem;
+  color: rgb(31, 29, 28); /* Rojo tierra */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilo de las secciones de texto */
+h5 {
+  font-size: 1.75rem;
+  color:xrgb(194, 43, 13) ;
+  margin-bottom: 15px;
+}
+
+/* Estilo para los párrafos */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Estilo de las imágenes de equipo */
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las reseñas */
+blockquote {
+  background-color: #fef9f4; /* Fondo claro */
+  border: 1px solid #e6a157; /* Borde cálido */
+  border-radius: 10px;
+  padding: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+blockquote footer {
+  text-align: right;
+  font-size: 1rem;
+  color: #AB0000 ;
+  font-weight: bold;
+}
+
+/* Estilo de los bloques de testimonios */
+blockquote p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo del row de imágenes y reseñas */
+.row {
+  margin-bottom: 30px;
+}
+
+/* Títulos centrados */
+.text-center {
+  text-align: center;
+}
+
+/* Ajuste de márgenes en las columnas */
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+  

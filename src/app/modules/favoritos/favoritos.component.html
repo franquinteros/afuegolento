@@ -1,0 +1,25 @@
+<div class="general">
+    <app-menu></app-menu>
+    <!-- Sección de Favoritos -->
+    <section class="favorites">
+        <h2>Mis Favoritos</h2>
+        <div class="favorites-list">
+            <div class="favorite-item" (click)="seleccionarReceta(0)">
+                <img src="/img01.avif" alt="Favorito 1">
+                <h3>Favorito 1</h3>
+            </div>
+            <div class="favorite-item" (click)="seleccionarReceta(1)">
+                <img src="/img02.jpg" alt="Favorito 2">
+                <h3>Favorito 2</h3>
+            </div>
+            <div class="favorite-item" (click)="seleccionarReceta(2)">
+                <img src="/img03.jpg" alt="Favorito 3">
+                <h3>Favorito 3</h3>
+            </div>
+            <!-- Agrega más items según lo necesites -->
+        </div>
+    </section>
+    <!-- El componente de seguimiento recibe el ID de la receta seleccionada -->
+    <app-seguimiento [recetaId]="recetaId"></app-seguimiento>
+  </div>
+  

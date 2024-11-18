@@ -1,0 +1,124 @@
+/* Estilos generales para el seguimiento */
+.recipe-tracker {
+    padding: 40px 20px;
+    background-color: #fdf2e9; /* Fondo cálido */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    opacity: 1;
+}
+
+/* Efecto al pasar el cursor sobre el contenedor */
+.recipe-tracker:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 247, 240, 0.95); /* Fondo más claro al pasar el cursor */
+}
+
+/* Animación al cambiar de receta */
+.slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Inicia desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Llega a la posición final */
+    }
+}
+
+/* Título principal */
+.recipe-tracker h2 {
+    font-size: 2rem;
+    color: #1a1817; /* Rojo tierra */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilos para las secciones de ingredientes y procedimiento */
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilo de las secciones de ingredientes y procedimiento */
+.ingredients, .procedure {
+    background-color: #fef9f4; /* Fondo claro */
+    border: 1px solid #e6a157; /* Borde cálido */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Títulos de las secciones */
+.ingredients h3, .procedure h3 {
+    font-size: 1.5rem;
+    color: #201a18;
+    margin-bottom: 15px;
+}
+
+/* Estilo de la lista de ingredientes */
+.ingredients-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo de cada ingrediente */
+.ingredients-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre los ingredientes */
+.ingredients-list li:hover {
+    background-color: #ffe6cc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo de la lista de pasos del procedimiento */
+.procedure-steps {
+    padding-left: 20px;
+}
+
+/* Estilo de cada paso del procedimiento */
+.procedure-steps li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 25px; /* Espacio para la marca de verificación */
+}
+
+/* Marca de verificación antes de cada paso */
+.procedure-steps li::before {
+    content: "✓";
+    color: #1e9414;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* Botones de acción */
+.button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+ 

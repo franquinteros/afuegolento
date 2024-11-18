@@ -1,0 +1,100 @@
+/* Contenedor principal */
+.media-section {
+  background-color: #fdf2e9; /* Fondo cálido */
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.media-section:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 247, 240, 0.95);
+}
+
+/* Título principal */
+.media-section h2 {
+  font-size: 2.5rem;
+  color: #AB0000 ;
+  margin-bottom: 30px;
+}
+
+/* Subtítulos */
+.media-section h5 {
+  font-size: 1.5rem;
+  color: #AB0000;
+  margin-bottom: 15px;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilo de las imágenes */
+.gallery-img {
+  width: 200px; /* Ancho fijo */
+  height: 350px; /* Alto fijo */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal del video */
+.ratio {
+  position: relative;
+  width:100%;
+  max-width: 400px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding-bottom: 133%; /* Proporción para formato 9:16 */
+  border-radius: 25px; /* Esquinas más redondeadas */
+  overflow: hidden;
+  background: linear-gradient(145deg, #fdf2e9, #fbe6d4); /* Fondo degradado cálido */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Iframe que contiene el video */
+.ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Efecto hover en el contenedor */
+.ratio:hover {
+  transform: scale(1.05); /* Zoom leve */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Decoración adicional: Borde interno */
+.ratio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Borde decorativo inicial */
+  border-radius: 25px;
+  z-index: 1;
+  pointer-events: none;
+  transition: border-color 0.3s ease;
+}
+
+.ratio:hover::before {
+  border-color: rgba(0, 0, 0, 0.3); /* Cambio de color en hover */
+}
+

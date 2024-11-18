@@ -1,22 +1,31 @@
-import { Component } from '@angular/core';
-import { MenuComponent } from '../shared/menu/menu.component';
-import { HeaderComponent } from "../shared/header/header.component";
-import { FooterComponent } from "../shared/footer/footer.component";
+import { Component, OnInit } from '@angular/core';
+import { FavoritosService } from '../../services/favoritos.service';
 import { SeguimientoComponent } from '../seguimiento/seguimiento.component';
+import { MenuComponent } from '../shared/menu/menu.component';
+import { HeaderComponent } from '../shared/header/header.component';
+import { FooterComponent } from '../shared/footer/footer.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-favoritos',
   standalone: true,
-  imports: [MenuComponent, HeaderComponent, FooterComponent, SeguimientoComponent],
+  imports: [MenuComponent, HeaderComponent, FooterComponent, SeguimientoComponent, NgFor],
   templateUrl: './favoritos.component.html',
   styleUrls: ['./favoritos.component.css']
 })
-export class FavoritosComponent {
-  recetaId: number | null = null;
+export class FavoritosComponent implements OnInit {
+  favoritos: any[] = [];
 
-  // Método para actualizar el ID de la receta seleccionada
-  seleccionarReceta(id: number): void {
-    this.recetaId = id; // Cambia el ID de la receta seleccionada
+  constructor(private favoritosService: FavoritosService) {}
+
+  ngOnInit(): void {
+    this.favoritos = this.favoritosService.obtenerFavoritos();
+  }
+
+  eliminarDeFavoritos(recetaId: number): void {
+    this.favoritosService.eliminarDeFavoritos(recetaId);
+    this.favoritos = this.favoritosService.obtenerFavoritos(); // Actualizar la lista
   }
 }
+
 

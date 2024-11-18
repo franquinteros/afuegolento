@@ -15,8 +15,10 @@
 /* Título principal */
 .media-section h2 {
   font-size: 2.5rem;
-  color: #AB0000 ;
+  color: #AB0000;
   margin-bottom: 30px;
+  text-align: center; /* Centra el título */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para mejor legibilidad */
 }
 
 /* Subtítulos */
@@ -24,6 +26,8 @@
   font-size: 1.5rem;
   color: #AB0000;
   margin-bottom: 15px;
+  text-align: center; /* Centra los subtítulos */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra suave para los subtítulos */
 }
 
 /* Contenedor de la galería */
@@ -52,7 +56,7 @@
 /* Contenedor principal del video */
 .ratio {
   position: relative;
-  width:100%;
+  width: 100%;
   max-width: 400px; /* Limita el ancho máximo del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   padding-bottom: 133%; /* Proporción para formato 9:16 */
@@ -97,4 +101,5 @@
 .ratio:hover::before {
   border-color: rgba(0, 0, 0, 0.3); /* Cambio de color en hover */
 }
+
 

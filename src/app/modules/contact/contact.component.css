@@ -50,35 +50,34 @@ h2 {
 h5 {
   font-size: 1.5rem; /* Tamaño de fuente para subtítulos */
   color: #333; /* Color del texto */
-  margin-bottom: 15px; /* Espaciado inferior */
+  margin-bottom: 15px;
 }
 
 /* Estilo de la lista de información de contacto */
 .list-unstyled {
-  list-style-type: none; /* Sin viñetas */
-  padding: 0; /* Sin padding */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 /* Estilo de cada elemento de la lista */
 .list-unstyled li {
-  margin-bottom: 10px; /* Espaciado inferior entre elementos */
-  color: #555; /* Color del texto */
+  margin-bottom: 10px;
+  color: #555;
 }
 
 /* Estilos para el formulario */
 .form-group {
-  margin-bottom: 20px; /* Espaciado inferior entre campos */
+  margin-bottom: 20px; 
 }
 
 /* Estilo del botón de enviar */
 .btn-primary {
-  background-color: #007bff; /* Color de fondo del botón */
-  border-color: #007bff; /* Color del borde del botón */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  background-color: #2B2B2B;
+  border-color: #2B2B2B; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 /* Efecto al pasar el cursor sobre el botón */
 .btn-primary:hover {
-  background-color: #0056b3; /* Color más oscuro al pasar el cursor */
-  transform: translateY(-2px); /* Mover hacia arriba */
+  background-color: #2B2B2B; 
 }

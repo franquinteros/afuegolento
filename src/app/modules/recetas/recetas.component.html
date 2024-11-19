@@ -6,7 +6,7 @@
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ receta.nombre }}</h5>
           <p class="card-text">{{ receta.descripcion }}</p>
-          <a [href]="receta.url" class="btn btn-primary mt-auto">Ver Receta</a>
+          <a [routerLink]="receta.url" class="btn btn-primary mt-auto">Ver Receta</a>
         </div>
         <div class="card-footer">
           <button
@@ -24,6 +24,8 @@
     </div>
   </div>
 </div>
+
+
   
 
   

@@ -1,5 +1,4 @@
 /* Estilo para el contenedor principal del Home */
-
 .home {
     margin-top: 0px;
     height: 100vh;
@@ -48,7 +47,6 @@
     /* Aumenta el tamaño al 110% */
 }
 
-
 /* Estilo para la sección de destino */
 .section-destino {
     /* Cambia la ruta según tu imagen */
@@ -85,7 +83,7 @@
     transition: transform 0.3s ease;
     /* Suaviza el cambio de transformación */
     text-align: center;
-
+    margin-top: 20px;
     padding-bottom: 10px;
 }
 

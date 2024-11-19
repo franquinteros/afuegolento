@@ -1,25 +1,20 @@
-/* Estilo para el contenedor principal del Home */
+
 .home {
     margin-top: 0px;
     height: 100vh;
-    /* Ocupa toda la altura de la ventana */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-image: url('/img04.jpg');
-    /* Cambia la ruta de la imagen */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* Imagen fija para efecto de parallax */
     color: white;
 }
 
-/* Estilo del contenido del home */
 .content h1 {
     font-size: 3rem;
-    /* Tamaño de fuente para el título */
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
@@ -29,31 +24,22 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: transparent;
-    /* Fondo transparente */
     color: white;
-    /* Color del texto */
     border: 2px solid rgba(255, 255, 255, 0.8);
-    /* Borde blanco semitransparente */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
-    /* Suaviza cambios de fondo y transformación */
 }
 
 .content button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    /* Fondo ligeramente blanco al pasar el cursor */
     transform: scale(1.1);
-    /* Aumenta el tamaño al 110% */
 }
 
-/* Estilo para la sección de destino */
 .section-destino {
-    /* Cambia la ruta según tu imagen */
     background-size: cover;
     padding: 20px;
     margin-top: 0px;
-    /* Espaciado interno de la sección */
 }
 
 .section-destino h2 {
@@ -64,24 +50,16 @@
 
 .title {
     font-size: 3rem;
-    /* Ajusta el tamaño de fuente según sea necesario */
     color: white;
-    /* Color del texto */
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
-    /* Sombra del texto mejorada */
     transition: transform 0.2s ease;
-    /* Suaviza el cambio de transformación */
 }
 
 .subtitle {
     font-size: 3rem;
-    /* Ajusta el tamaño de fuente según sea necesario */
-    color: white;
-    /* Color del texto */
+    color: white;  
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
-    /* Sombra del texto mejorada */
     transition: transform 0.3s ease;
-    /* Suaviza el cambio de transformación */
     text-align: center;
     margin-top: 20px;
     padding-bottom: 10px;
@@ -89,24 +67,17 @@
 
 .title:hover {
     transform: scale(1.1);
-    /* Aumenta el tamaño al 110% */
 }
 
 
 .logo {
     width: 150px;
-    /* Ajusta el tamaño según sea necesario */
     height: auto;
-    /* Mantiene la proporción del logo */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-    /* Sombra con desplazamiento y desenfoque */
     border-radius: 10px;
-    /* Opcional: redondear los bordes del logo */
     transition: transform 0.3s ease;
-    /* Suaviza el cambio de transformación */
 }
 
 .logo:hover {
     transform: scale(1.1);
-    /* Aumenta el tamaño al 110% */
 }

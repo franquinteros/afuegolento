@@ -1,0 +1,94 @@
+
+.position-absolute h1, 
+h3 {
+    color: #fff; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+}
+
+.text-warning {
+    color: #fff; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#estrellas i {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+.position-relative img {
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 70px;
+}
+
+.position-relative img {
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 70px;
+}
+
+.position-absolute h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.list-group-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.form-check-input {
+    accent-color: #ab0000;
+}
+
+
+.list-group-numbered>.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#estrellas i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#estrellas i.text-warning:hover,
+#estrellas i.text-warning:hover~i {
+    color: #ffd700;
+}
+
+
+.btn-primary {
+    background-color: #ab0000 !important;
+    border-color: #ab0000 !important;
+}
+
+.btn-primary:hover {
+    background-color: #850000 !important;
+    border-color: #850000 !important;
+}
+
+
+.list-group-item .text-warning i {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .position-relative img {
+        max-height: 300px;
+    }
+
+    .list-group-numbered>.list-group-item {
+        font-size: 0.9rem;
+    }
+
+    #estrellas i {
+        font-size: 1.2rem;
+    }
+}

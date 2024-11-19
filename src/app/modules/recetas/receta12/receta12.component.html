@@ -1,1 +1,124 @@
-<p>receta12 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-cordero.jpg" class="img-fluid w-100 rounded" alt="Cordero al Asador" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Cordero al Asador
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+      <!-- Ingredientes -->
+      <div class="col-md-4">
+        <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente1" class="form-check-label">1 Cordero Entero (Aproximadamente 10-12kg)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente2"
+            />
+            <label for="ingrediente2" class="form-check-label">Sal Gruesa</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente3" class="form-check-label">Salmuera (1 Litro de agua tibia, 2 Cucharadas de Sal Gruesa, 1 Ramita de Romero, 1 Diente de Ajo Machacado)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente3" class="form-check-label">Limón (Opcional)</label>
+          </li>
+          
+          <!-- Más ingredientes -->
+        </ul>
+      </div>
+  
+      <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Limpiar el cordero retirando restos de grasa o vísceras.</li>
+          <li class="list-group-item">Abrir el cordero al medio, fijándolo en la cruz del asador con alambres o ganchos. La piel debe quedar hacia el fuego en el inicio.</li>
+          <li class="list-group-item">Untar el cordero con sal gruesa y, si deseas, jugo de limón.</li>
+          <li class="list-group-item">Hacer un fuego con leña hasta obtener brasas parejas. Colocar la cruz del asador a unos 45° de inclinación frente al fuego.</li>
+          <li class="list-group-item">Mantener las brasas a una distancia de aproximadamente 40-50 cm del cordero para que se cocine lentamente.</li>
+          <li class="list-group-item">Cocción (aproximadamente 5-6 horas): Cocinar con la piel hacia el fuego durante 3 horas. Esto permitirá que la grasa de la piel se derrita y ayude a cocinar de forma pareja. </li>
+          <li class="list-group-item">Dar vuelta: Girar el cordero para que la parte de la carne quede frente al fuego y cocinar por otras 2-3 horas.</li>
+          <li class="list-group-item">Mientras se cocina, rociar regularmente con la salmuera para mantener la carne jugosa y con buen sabor.</li>
+          <li class="list-group-item">El cordero estará listo cuando la carne esté tierna y se despegue fácilmente del hueso.</li>
+          <li class="list-group-item">Retirar del asador, cortar en porciones y acompañar con ensaladas frescas, papas asadas o pan casero.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+    <!-- Reseñas -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+      <div class="list-group">
+        
+        <!-- Añadir reseña -->
+        <div class="mb-4">
+          <h5 class="fw-bold">Deja tu reseña</h5>
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">Tu calificación:</span>
+            <div id="estrellas">
+              <i 
+                *ngFor="let estrella of estrellas; let i = index" 
+                class="bi bi-star-fill" 
+                [ngClass]="{
+                  'text-warning': i < calificacion,
+                  'text-secondary': i >= calificacion
+                }" 
+                (click)="setCalificacion(i + 1)"
+                [attr.data-calificacion]="i + 1">
+              </i>
+            </div>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+          <button class="btn btn-primary">Enviar Reseña</button>
+        </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Ricardo Rodriguez</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Increíble, el cordero quedó espectacular y muy sabroso."</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

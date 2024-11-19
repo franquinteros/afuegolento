@@ -8,7 +8,6 @@ import { MenuComponent } from './modules/shared/menu/menu.component';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { FooterComponent } from './modules/shared/footer/footer.component';
 import { CarouselComponent } from './modules/carousel/carousel.component';
-import { SeguimientoComponent } from './modules/seguimiento/seguimiento.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { UsComponent } from './modules/us/us.component';
 import { Receta1Component } from './modules/recetas/receta1/receta1.component';
@@ -32,7 +31,6 @@ export const routes: Routes = [
     { path: 'header', component: HeaderComponent },
     { path: 'footer', component: FooterComponent },
     { path: 'carousel', component: CarouselComponent },
-    { path: 'seguimiento', component: SeguimientoComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'us', component: UsComponent },
     { path: 'receta1', component: Receta1Component },

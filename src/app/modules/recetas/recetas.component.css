@@ -1,3 +1,36 @@
+.position-relative img {
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 70px;
+}
+
+.position-absolute h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.list-group-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.form-check-input {
+    accent-color: #ab0000;
+}
+
+
+.list-group-numbered>.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item .text-warning i {
+    margin-right: 5px;
+}
 
   
 

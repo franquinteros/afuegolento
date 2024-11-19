@@ -1,6 +1,6 @@
-/* Contenedor principal */
+
 .media-section {
-  background-color: #fdf2e9; /* Fondo cálido */
+  background-color: #fdf2e9;
   border-radius: 10px;
   padding: 40px 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -12,25 +12,22 @@
   background-color: rgba(255, 247, 240, 0.95);
 }
 
-/* Título principal */
 .media-section h2 {
   font-size: 2.5rem;
   color: #AB0000;
   margin-bottom: 30px;
-  text-align: center; /* Centra el título */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para mejor legibilidad */
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Subtítulos */
 .media-section h5 {
   font-size: 1.5rem;
   color: #AB0000;
   margin-bottom: 15px;
-  text-align: center; /* Centra los subtítulos */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra suave para los subtítulos */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Contenedor de la galería */
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -38,11 +35,10 @@
   justify-content: center;
 }
 
-/* Estilo de las imágenes */
 .gallery-img {
-  width: 200px; /* Ancho fijo */
-  height: 350px; /* Alto fijo */
-  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -53,21 +49,20 @@
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Contenedor principal del video */
+
 .ratio {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Limita el ancho máximo del contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding-bottom: 133%; /* Proporción para formato 9:16 */
-  border-radius: 25px; /* Esquinas más redondeadas */
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 133%;
+  border-radius: 25px;
   overflow: hidden;
-  background: linear-gradient(145deg, #fdf2e9, #fbe6d4); /* Fondo degradado cálido */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  background: linear-gradient(145deg, #fdf2e9, #fbe6d4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Iframe que contiene el video */
 .ratio iframe {
   position: absolute;
   top: 0;
@@ -77,13 +72,11 @@
   border: 0;
 }
 
-/* Efecto hover en el contenedor */
 .ratio:hover {
-  transform: scale(1.05); /* Zoom leve */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Decoración adicional: Borde interno */
 .ratio::before {
   content: '';
   position: absolute;
@@ -91,7 +84,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid rgba(0, 0, 0, 0.3); /* Borde decorativo inicial */
+  border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   z-index: 1;
   pointer-events: none;
@@ -99,7 +92,7 @@
 }
 
 .ratio:hover::before {
-  border-color: rgba(0, 0, 0, 0.3); /* Cambio de color en hover */
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 

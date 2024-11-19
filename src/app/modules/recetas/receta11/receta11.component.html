@@ -1,1 +1,109 @@
-<p>receta11 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-chivito.jpg" class="img-fluid w-100 rounded" alt="Chivito al Asador" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Chivito al Asador
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+      <!-- Ingredientes -->
+      <div class="col-md-4">
+        <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente1" class="form-check-label">1 Chivito (Entero, Limpio)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente2"
+            />
+            <label for="ingrediente2" class="form-check-label">Salmuera (Agua, Sal Gruesa y Hierbas como Romero o Tomillo)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente3" class="form-check-label">Limón (opcional)</label>
+          </li>
+          
+        </ul>
+      </div>
+  
+      <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Preparar el fuego: Hacer un fuego lento con brasas parejas.</li>
+          <li class="list-group-item">Colocar el chivito: Abrir el chivito al medio y fijarlo en la cruz del asador.</li>
+          <li class="list-group-item">Cocción: Ubicarlo a 45° de la brasa con el lado interior hacia el fuego. Cocinar durante 4 horas, dando vuelta a la mitad del tiempo y rociando con salmuera regularmente.</li>
+          <li class="list-group-item">Servir: Cortar en porciones y acompañar con ensaladas frescas.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+    <!-- Reseñas -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+      <div class="list-group">
+        
+        <!-- Añadir reseña -->
+        <div class="mb-4">
+          <h5 class="fw-bold">Deja tu reseña</h5>
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">Tu calificación:</span>
+            <div id="estrellas">
+              <i 
+                *ngFor="let estrella of estrellas; let i = index" 
+                class="bi bi-star-fill" 
+                [ngClass]="{
+                  'text-warning': i < calificacion,
+                  'text-secondary': i >= calificacion
+                }" 
+                (click)="setCalificacion(i + 1)"
+                [attr.data-calificacion]="i + 1">
+              </i>
+            </div>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+          <button class="btn btn-primary">Enviar Reseña</button>
+        </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Gonzalo Altamirano</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Un poco de olor a humo cuando hice el fuego, pero la preparación fue increible!"</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

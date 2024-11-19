@@ -1,1 +1,124 @@
-<p>receta6 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-mpizza.webp" class="img-fluid w-100 rounded" alt="Matambre a la Pizza" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Matambre a la pizza
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+      <!-- Ingredientes -->
+      <div class="col-md-4">
+        <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente1" class="form-check-label">1 Matambre de Vaca (Limpio de Grasa)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente2" class="form-check-label">1 Taza de Puré de Tomate</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente2"
+            />
+            <label for="ingrediente3" class="form-check-label">200g de Queso Mozzarella</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente4" class="form-check-label">2 Tomates (En Rodajas)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente4"
+            />
+            <label for="ingrediente5" class="form-check-label">Orégano, Sal y Pimienta al Gusto</label>
+          </li>
+          <!-- Más ingredientes -->
+        </ul>
+      </div>
+  
+      <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Cocinar el matambre: Colocar el matambre con el lado graso hacia abajo en una parrilla o plancha caliente. Cocinar a fuego lento durante 40 minutos.</li>
+          <li class="list-group-item">Armar la "pizza": Dar vuelta el matambre y cubrir con puré de tomate, queso, rodajas de tomate, orégano y aceitunas.</li>
+          <li class="list-group-item">Gratinar: Cocinar hasta que el queso se derrita.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+    <!-- Reseñas -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+      <div class="list-group">
+        
+        <!-- Añadir reseña -->
+        <div class="mb-4">
+          <h5 class="fw-bold">Deja tu reseña</h5>
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">Tu calificación:</span>
+            <div id="estrellas">
+              <i 
+                *ngFor="let estrella of estrellas; let i = index" 
+                class="bi bi-star-fill" 
+                [ngClass]="{
+                  'text-warning': i < calificacion,
+                  'text-secondary': i >= calificacion
+                }" 
+                (click)="setCalificacion(i + 1)"
+                [attr.data-calificacion]="i + 1">
+              </i>
+            </div>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+          <button class="btn btn-primary">Enviar Reseña</button>
+        </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Simón Castañaro</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Contentísimo con la preparación, muy sabroso y fácil de realizar."</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

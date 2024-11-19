@@ -1,34 +1,30 @@
-/* Personalización de la barra de navegación */
+
 .navbar-custom {
     margin: 0px;
-    background-color: #2B2B2B !important; /* Color de fondo personalizado */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  }
+    background-color: #2B2B2B !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   
-  /* Estilo de los enlaces en el menú de navegación */
   .navbar-custom .nav-link {
-    transition: color 0.3s ease, transform 0.3s ease; /* Suavizar transiciones */
+    transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .navbar-custom .nav-link:hover {
-    color: #AB0000 !important; /* Color del texto al pasar el cursor */
-    transform: scale(1.05); /* Efecto zoom al pasar el cursor */
+    color: #AB0000 !important;
+    transform: scale(1.05);
   }
   
-  /* Estilo del logo */
   .navbar-brand img {
-    border-radius: 50%; /* Hacer el logo redondo */
-    transition: transform 0.3s ease; /* Suavizar el zoom en el logo */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
   }
   
   .navbar-brand img:hover {
-    transform: scale(1.1); /* Efecto zoom en el logo */
+    transform: scale(1.1);
   }
   
-  /* Personalización de la barra lateral del offcanvas */
   .offcanvas-header {
-    background-color: #2B2B2B; /* Fondo de la barra lateral */
-    color: white; /* Color de texto blanco */
+    background-color: #2B2B2B;
+    color: white;
   }
   
   .offcanvas-title {
@@ -37,30 +33,27 @@
   }
   
   .btn-close-white {
-    filter: invert(1); /* Hace que el botón de cerrar sea blanco */
+    filter: invert(1);
   }
   
-  /* Estilo del contenedor del offcanvas */
   .offcanvas-body {
     background-color: #2B2B2B;
   }
   
   .offcanvas .navbar-nav .nav-link {
-    color: #f1f1f1; /* Color de los enlaces en la barra lateral */
+    color: #f1f1f1;
   }
   
   .offcanvas .navbar-nav .nav-link:hover {
-    color: #AB0000 ; /* Color de los enlaces en hover */
+    color: #AB0000 ;
   }
   
-  /* Estilo del toggler */
   .navbar-toggler {
-    border: none; /* Elimina el borde por defecto */
+    border: none;
   }
   
   .navbar-toggler-icon {
-    background-color: #AB0000; /* Color del ícono de toggle */
+    background-color: #AB0000;
     border-radius: 5px;
   }
-  
-
+}

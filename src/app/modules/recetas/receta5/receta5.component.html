@@ -1,1 +1,141 @@
-<p>receta5 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-chori.webp" class="img-fluid w-100 rounded" alt="Choripan con Chimichurri" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Choripan con Chimichurri
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+      <!-- Ingredientes -->
+      <div class="col-md-4">
+        <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente1" class="form-check-label">4 Chorizos</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente2"
+            />
+            <label for="ingrediente2" class="form-check-label">4 Panes Tipo Baguette</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente3" class="form-check-label">1 Taza de Perejil Picado</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente4"
+            />
+            <label for="ingrediente4" class="form-check-label">3 Dientes de Ajo Picados</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente5"
+            />
+            <label for="ingrediente5" class="form-check-label">1/2 Taza de Aceite</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente6"
+            />
+            <label for="ingrediente6" class="form-check-label">1/2 Taza de Aceite</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente7"
+            />
+            <label for="ingrediente7" class="form-check-label">Sal, Orégano, Ají Molido y Pimienta al Gusto</label>
+          </li>
+          
+
+        </ul>
+      </div>
+  
+      <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Preparar el Chimichurri: Mezclar todos los ingredientes y dejar reposar 1 hora.</li>
+          <li class="list-group-item">Cocinar los Chorizos: Asarlos a la parrilla o a la plancha.</li>
+          <li class="list-group-item">Armar: Abrir los panes, colocar el chorizo y añadir chimichurri.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+    <!-- Reseñas -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+      <div class="list-group">
+        
+        <!-- Añadir reseña -->
+        <div class="mb-4">
+          <h5 class="fw-bold">Deja tu reseña</h5>
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">Tu calificación:</span>
+            <div id="estrellas">
+              <i 
+                *ngFor="let estrella of estrellas; let i = index" 
+                class="bi bi-star-fill" 
+                [ngClass]="{
+                  'text-warning': i < calificacion,
+                  'text-secondary': i >= calificacion
+                }" 
+                (click)="setCalificacion(i + 1)"
+                [attr.data-calificacion]="i + 1">
+              </i>
+            </div>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+          <button class="btn btn-primary">Enviar Reseña</button>
+        </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Francisco Quinteros</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Cada receta que he probado ha salido perfecta. Esta en especial es mi receta favorita."</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

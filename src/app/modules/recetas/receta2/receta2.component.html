@@ -1,1 +1,169 @@
-<p>receta2 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-pad.jpg" class="img-fluid w-100 rounded" alt="Pollo al Disco" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Pollo al Disco
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+        <!-- Ingredientes -->
+        <div class="col-md-4">
+          <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+          <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente1" class="form-check-label">1 Pollo Entero Trozado</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente2" class="form-check-label">2 cebollas grandes (cortadas en rodajas)</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente3" class="form-check-label">2 Pimientos (Rojo y Verde, Cortados en Tiras)</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente4" class="form-check-label">4 Dientes de Ajo (Picados)</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente5" class="form-check-label">4 Tomates Maduros (Pelados y Cortados en Cubos)</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <input
+                type="checkbox"
+                class="form-check-input me-2"
+                id="ingrediente1"
+              />
+              <label for="ingrediente6" class="form-check-label">1kg de Papas (Peladas y Cortadas en Rodajas)</label>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input me-2"
+                  id="ingrediente1"
+                />
+                <label for="ingrediente7" class="form-check-label">1 Vaso de Vino Blanco</label>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input me-2"
+                  id="ingrediente1"
+                />
+                <label for="ingrediente8" class="form-check-label">1 Taza de Caldo de Verduras</label>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input me-2"
+                  id="ingrediente1"
+                />
+                <label for="ingrediente9" class="form-check-label">Aceite (Cantidad Necesaria)</label>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input me-2"
+                  id="ingrediente1"
+                />
+                <label for="ingrediente10" class="form-check-label">Sal, Pimienta, Pimentón y Orégano al Gusto</label>
+              </li>
+            <!-- Más ingredientes -->
+          </ul>
+        </div>
+    
+        <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Preparar el disco: Calentar el disco y agregar aceite para evitar que los ingredientes se peguen.</li>
+          <li class="list-group-item">Sellar el pollo: Dorar las piezas de pollo hasta que estén bien doradas. Retirar y reservar.</li>
+          <li class="list-group-item">Cocinar las verduras: En el mismo aceite, saltear cebolla, pimientos y ajo hasta que estén tiernos.</li>
+          <li class="list-group-item">Incorporar el pollo: Volver a colocar el pollo en el disco y agregar los tomates. Cocinar por unos minutos.</li>
+          <li class="list-group-item">Agregar líquido: Verter el vino blanco y dejar que se evapore el alcohol. Luego, añadir el caldo de verduras.</li>
+          <li class="list-group-item">Cocinar las papas: Colocar las papas por encima, condimentar y tapar el disco. Cocinar a fuego bajo durante 40-50 minutos, revolviendo ocasionalmente.</li>
+          <li class="list-group-item">Servir: Cuando las papas estén cocidas, servir caliente con pan fresco.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+       <!-- Reseñas -->
+       <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+          <div class="list-group">
+            
+            <!-- Añadir reseña -->
+            <div class="mb-4">
+              <h5 class="fw-bold">Deja tu reseña</h5>
+              <div class="d-flex align-items-center mb-3">
+                <span class="text-warning me-2">Tu calificación:</span>
+                <div id="estrellas">
+                  <i 
+                    *ngFor="let estrella of estrellas; let i = index" 
+                    class="bi bi-star-fill" 
+                    [ngClass]="{
+                      'text-warning': i < calificacion,
+                      'text-secondary': i >= calificacion
+                    }" 
+                    (click)="setCalificacion(i + 1)"
+                    [attr.data-calificacion]="i + 1">
+                  </i>
+                </div>
+              </div>
+              <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+              <button class="btn btn-primary">Enviar Reseña</button>
+            </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Megan Rodriguez</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Muy bien especificado los pasos a seguir, Contenta por como me salio. "</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

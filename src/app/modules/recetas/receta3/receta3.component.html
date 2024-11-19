@@ -1,1 +1,161 @@
-<p>receta3 works!</p>
+<app-menu></app-menu>
+<div class="container my-5">
+    <!-- Imagen y título -->
+    <div class="row">
+      <div class="col-12">
+        <div class="position-relative">
+          <img src="/receta-emp.jpg" class="img-fluid w-100 rounded" alt="Empanadas Criollas" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold bg-dark bg-opacity-50 p-3 rounded">
+              Empanadas Criollas
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Ingredientes y pasos -->
+    <div class="row mt-5">
+      <!-- Ingredientes -->
+      <div class="col-md-4">
+        <h3 class="fw-bold text-uppercase mb-4">Ingredientes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente1"
+            />
+            <label for="ingrediente1" class="form-check-label">500 g de Carne Picada (Preferentemente de Nalga o Paleta)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente2"
+            />
+            <label for="ingrediente2" class="form-check-label">2 Cebollas Grandes (Picadas)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente3"
+            />
+            <label for="ingrediente3" class="form-check-label">2 Huevos Duros (Picados)</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente4"
+            />
+            <label for="ingrediente4" class="form-check-label">1 Cucharadita de Pimentón Dulce</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente5"
+            />
+            <label for="ingrediente5" class="form-check-label">1/2 Cucharadita de Comino</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente6"
+            />
+            <label for="ingrediente6" class="form-check-label">1/2 Cucharadita de Ají Molido</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente7"
+            />
+            <label for="ingrediente7" class="form-check-label">Sal y Pimienta al Gusto</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente8"
+            />
+            <label for="ingrediente8" class="form-check-label">12 Tapas de Empanada</label>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <input
+              type="checkbox"
+              class="form-check-input me-2"
+              id="ingrediente9"
+            />
+            <label for="ingrediente9" class="form-check-label">Aceite o Grasa para Cocinar</label>
+          </li>
+          
+          
+        </ul>
+      </div>
+  
+      <!-- Pasos -->
+      <div class="col-md-8">
+        <h3 class="fw-bold text-uppercase mb-4">Pasos a seguir</h3>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Preparar el relleno: Saltear las cebollas en grasa o aceite hasta que estén tiernas. </li>
+          <li class="list-group-item">Agregar la carne y cocinar hasta que esté dorada.</li>
+          <li class="list-group-item">Condimentar: Incorporar el pimentón, comino, ají molido, sal y pimienta. Mezclar bien y retirar del fuego.</li>
+          <li class="list-group-item">Agregar ingredientes fríos: Añadir los huevos duros y las aceitunas. Dejar enfriar el relleno.</li>
+          <li class="list-group-item">Armar las empanadas: Colocar una porción de relleno en el centro de cada disco, cerrar y hacer un repulgue para sellarlas</li>
+          <li class="list-group-item">Cocinar: Hornear a 200 °C durante 15-20 minutos o freírlas en aceite caliente hasta que estén doradas.</li>
+          <li class="list-group-item">Servir: Disfrutar calientes.</li>
+          <!-- Más pasos -->
+        </ol>
+      </div>
+    </div>
+  
+    <!-- Reseñas -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3 class="fw-bold text-uppercase mb-4">Reseñas</h3>
+      <div class="list-group">
+        
+        <!-- Añadir reseña -->
+        <div class="mb-4">
+          <h5 class="fw-bold">Deja tu reseña</h5>
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">Tu calificación:</span>
+            <div id="estrellas">
+              <i 
+                *ngFor="let estrella of estrellas; let i = index" 
+                class="bi bi-star-fill" 
+                [ngClass]="{
+                  'text-warning': i < calificacion,
+                  'text-secondary': i >= calificacion
+                }" 
+                (click)="setCalificacion(i + 1)"
+                [attr.data-calificacion]="i + 1">
+              </i>
+            </div>
+          </div>
+          <textarea class="form-control mb-3" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+          <button class="btn btn-primary">Enviar Reseña</button>
+        </div>
+  
+          <!-- Reseña existente -->
+          <div class="list-group-item">
+            <h5 class="fw-bold">Lautaro Abatte</h5>
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="mb-1">"Una explosion de sabores gracias a la combinacion de ingredientes, era unica y fresca."</p>
+            <small class="text-muted">5 estrellas</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

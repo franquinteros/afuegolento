@@ -1,66 +1,61 @@
-/* Fondo general */
-/* Contenedor general para centrar el formulario */
+
 .general {
-    background-image: url('/imglogin.jpeg'); /* Imagen de fondo para la sección general */
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen de fondo */
-    min-height: 100vh; /* Altura mínima de la ventana */
+    background-image: url('/imglogin.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
 }
 
-/* Estilos para el contenedor del formulario */
 .card {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco con baja opacidad */
-    backdrop-filter: blur(10px); /* Desenfoque del fondo detrás del formulario */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
-    transition: transform 0.3s ease; /* Transición para el efecto de agrandamiento */
-    transform: scale(1); /* Tamaño inicial */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform: scale(1);
 }
 
-/* Efecto de agrandamiento al pasar el cursor por encima del formulario */
 .card:hover {
-    transform: scale(1.05); /* Agranda el formulario al 105% */
+    transform: scale(1.05);
 }
 
-/* Estilos para el logo */
+
 .logo {
-    width: 100%; /* Ancho completo del contenedor */
-    max-width: 120px; /* Tamaño máximo del logo */
-    height: auto; /* Mantiene la proporción del logo */
-    display: block; /* Centra el logo */
-    margin: 0 auto 15px; /* Margen inferior para separar del título */
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
 }
 
-/* Campos de entrada */
 .form-control {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px; /* Más espacio interno */
-    border: 1px solid rgba(206, 212, 218, 0.8); /* Borde gris claro */
-    transition: all 0.3s ease; /* Transición suave al enfocar */
-    color: #333; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid rgba(206, 212, 218, 0.8);
+    transition: all 0.3s ease;
+    color: #333;
 }
 
-/* Efecto de enfoque en los campos de entrada */
 .form-control:focus {
-    border-color: #80bdff; /* Color azul al enfocar */
-    box-shadow: 0px 0px 5px rgba(128, 189, 255, 0.5); /* Sombra de enfoque */
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo más claro al enfocar */
+    border-color: #80bdff;
+    box-shadow: 0px 0px 5px rgba(128, 189, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Botón de envío */
+
 .btn-primary {
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
-    color: #333; /* Color del texto */
-    border: 2px solid rgba(255, 255, 255, 0.8); /* Borde blanco semitransparente */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px; /* Espacio interno */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo más claro al pasar el cursor */
-    transform: scale(1.05); /* Agrandamiento al pasar el cursor */
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
 }

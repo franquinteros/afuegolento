@@ -1,12 +1,11 @@
-/* Estilo para el título "Mis Favoritos" */
+
 h2 {
-    font-family: 'Anton', sans-serif; /* Usa la fuente Anton */
-    font-size: 2.5rem; /* Tamaño de fuente grande */
-    font-weight: bold; /* Hacer el título más llamativo */
-    color: #2B2B2B; /* Color oscuro similar a los botones */
-    margin-top: 80px; /* Separación del navbar, ajusta el valor según sea necesario */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    text-align: center; /* Centrar el título */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-  }
-  
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+}

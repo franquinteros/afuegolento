@@ -1,131 +1,113 @@
-/* styles.css */
 body {
-    background-image: url('../public/Mantel.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-  }
+  background-image: url('../public/Mantel.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
 
-  html, body {
-    overflow: auto;
-  }
+html, body {
+  overflow: auto;
+}
 
-/* Zoom en la tarjeta al pasar el cursor */
 .card {
-  transition: transform 0.3s ease-in-out; /* Efecto suave de zoom */
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Leve aumento de tamaño */
-  z-index: 1; /* Eleva la tarjeta en hover */
+  transform: scale(1.05);
+  z-index: 1;
 }
 
-/* Estilos para las imágenes de las tarjetas */
 .card-img-top {
-  width: 100%;         /* La imagen ocupará todo el ancho del contenedor */
-  height: 200px;       /* Fija una altura uniforme */
-  object-fit: cover;   /* Ajusta la imagen para que no se deforme */
-  transition: transform 0.3s ease-in-out; /* Animación en la imagen */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover .card-img-top {
-  transform: scale(1.1); /* Zoom en la imagen */
+  transform: scale(1.1);
 }
 
-/* Estilos para los botones */
 .btn {
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease; /* Efectos suaves */
-  border: 2px solid #2B2B2B; /* Borde inicial color oscuro */
-  box-shadow: none; /* Sin sombra */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+  border: 2px solid #2B2B2B;
+  box-shadow: none;
+  font-family: 'Kanit', sans-serif; 
 }
 
-/* Eliminar contornos en hover, focus y active */
 .btn:focus,
 .btn:active {
-  outline: none; /* Sin contorno */
-  box-shadow: none !important; /* Sin sombra en focus */
+  outline: none;
+  box-shadow: none !important;
 }
 
-/* Estilos específicos para los botones de favoritos */
 .btn-warning {
-  background-color: #2B2B2B !important; /* Fondo oscuro inicial */
-  color: #fff !important; /* Texto blanco */
-  border-color: #2B2B2B; /* Borde oscuro */
+  background-color: #2B2B2B !important; 
+  color: #fff !important;
+  border-color: #2B2B2B;
 }
 
 .btn-warning:hover {
-  background-color: #AB0000 !important; /* Fondo rojizo en hover */
-  color: #fff !important; /* Texto blanco */
-  border-color: #AB0000; /* Borde rojizo en hover */
+  background-color: #AB0000 !important;
+  color: #fff !important;
+  border-color: #AB0000;
 }
 
 .btn-danger {
-  background-color: #2B2B2B !important; /* Fondo oscuro inicial */
-  color: #fff !important; /* Texto blanco */
-  border-color: #2B2B2B; /* Borde oscuro */
+  background-color: #2B2B2B !important;
+  color: #fff !important;
+  border-color: #2B2B2B;
 }
 
 .btn-danger:hover {
-  background-color: #AB0000 !important; /* Fondo rojizo en hover */
-  color: #fff !important; /* Texto blanco */
-  border-color: #AB0000; /* Borde rojizo en hover */
+  background-color: #AB0000 !important;
+  color: #fff !important;
+  border-color: #AB0000; 
 }
 
-/* Efecto en el botón al hacer clic */
 .btn:active {
-  transform: scale(0.98); /* Leve reducción para efecto de clic */
+  transform: scale(0.98);
 }
 
-/* Estilos para el botón "Ver Receta" */
 .btn-primary {
-  background-color: #2B2B2B !important; /* Fondo oscuro inicial */
-  color: #fff !important; /* Texto blanco */
-  border-color: #2B2B2B; /* Borde oscuro */
+  background-color: #2B2B2B !important;
+  color: #fff !important;
+  border-color: #2B2B2B;
 }
 
 .btn-primary:hover {
-  background-color: #AB0000 !important; /* Fondo rojizo en hover */
-  color: #fff !important; /* Texto blanco */
-  border-color: #AB0000; /* Borde rojizo en hover */
+  background-color: #AB0000 !important;
+  color: #fff !important;
+  border-color: #AB0000;
 }
 
 .btn-primary:active {
-  transform: scale(0.98); /* Leve reducción para efecto de clic */
+  transform: scale(0.98);
 }
 
-/* Aplicar la fuente Kanit por defecto para todo el sitio */
 body {
   font-family: 'Kanit', sans-serif;
 }
 
-/* Puedes especificar la fuente Anton en otras áreas si lo deseas, por ejemplo: */
 h1, h2, h3, h4, h5, h6{
   font-family: 'Anton', sans-serif;
 }
 
-
-/* Botones Bootstrap */
-.btn, .btn-primary, .btn-warning, .btn-danger {
-  font-family: 'Kanit', sans-serif; /* Aplicar la tipografía Kanit a los botones */
-}
-
-/* Formularios y campos de entrada */
 input, textarea, select, .form-control {
-  font-family: 'Kanit', sans-serif; /* Aplicar la tipografía Kanit a los formularios */
+  font-family: 'Kanit', sans-serif; 
 }
 
-/* Estilo para los títulos en formularios */
 label, .form-label {
-  font-family: 'Anton', sans-serif; /* Aplicar la tipografía Anton a los títulos de los formularios */
+  font-family: 'Anton', sans-serif;
 }
 
-/* Estilo de los botones (para enlaces como "Ver receta", etc.) */
 a.btn {
-  font-family: 'Kanit', sans-serif; /* Asegura que los botones con enlaces también tengan la tipografía correcta */
+  font-family: 'Kanit', sans-serif;
 }
 
-/* Estilo en los botones al pasar el cursor */
 .btn:hover, .btn:active {
-  font-family: 'Kanit', sans-serif; /* Mantener la tipografía de los botones durante los estados hover y active */
+  font-family: 'Kanit', sans-serif; 
 }
+

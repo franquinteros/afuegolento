@@ -2,24 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FavoritosService } from '../../services/favoritos.service';
 import { RouterLink } from '@angular/router';
 import { NgClass, NgFor } from '@angular/common';
-import { Receta1Component } from './receta1/receta1.component';
-import { Receta2Component } from './receta2/receta2.component';
-import { Receta3Component } from './receta3/receta3.component';
-import { Receta4Component } from './receta4/receta4.component';
-import { Receta5Component } from './receta5/receta5.component';
-import { Receta6Component } from './receta6/receta6.component';
-import { Receta7Component } from './receta7/receta7.component';
-import { Receta8Component } from './receta8/receta8.component';
-import { Receta9Component } from './receta9/receta9.component';
-import { Receta10Component } from './receta10/receta10.component';
-import { Receta11Component } from './receta11/receta11.component';
-import { Receta12Component } from './receta12/receta12.component';
 
 @Component({
   selector: 'app-recetas',
   templateUrl: './recetas.component.html',
   standalone: true ,
-  imports: [NgClass, NgFor, RouterLink, Receta1Component, Receta2Component, Receta3Component, Receta4Component, Receta5Component, Receta6Component, Receta7Component, Receta8Component, Receta9Component, Receta10Component, Receta11Component, Receta12Component]
+  imports: [NgClass, NgFor, RouterLink,]
 })
 export class RecetasComponent implements OnInit {
   recetas = [
